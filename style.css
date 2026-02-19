@@ -19,7 +19,6 @@ html, body {
   display: none;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(circle at center, #0f172a, #020617 80%);
 }
 
 .page.active { display: flex; }
@@ -32,7 +31,6 @@ html, body {
   border-radius: 14px;
   text-align: center;
   box-shadow: 0 0 40px rgba(0,0,0,.8);
-  z-index: 10;
 }
 
 .safe-title { color: #5ffcff; font-size: 14px; }
@@ -61,7 +59,6 @@ html, body {
   background: #1b243b;
   color: #e5e7eb;
   border: none;
-  cursor: pointer;
 }
 
 .ok { background: #3ef2c5; color: #020617; }
@@ -69,7 +66,6 @@ html, body {
 /* SHAKE */
 .shake { animation: shake .4s; }
 @keyframes shake {
-  0% { transform: translateX(0); }
   25% { transform: translateX(-5px); }
   50% { transform: translateX(5px); }
   75% { transform: translateX(-5px); }
@@ -111,7 +107,7 @@ html, body {
 
 .polaroid-card:hover,
 .polaroid-card.active {
-  transform: scale(1.1) rotate(0deg);
+  transform: scale(1.1) rotate(0);
   z-index: 10;
   box-shadow: 0 0 30px rgba(255,79,135,.7);
 }
@@ -156,7 +152,6 @@ html, body {
   margin-top: 12px;
 }
 
-/* NEXT BUTTON */
 .next-btn {
   margin-top: 18px;
   text-align: right;
@@ -168,23 +163,33 @@ html, body {
   color: #5ffcff;
   padding: 8px 16px;
   font-size: 12px;
-  cursor: pointer;
-  transition: .3s;
 }
 
-.next-btn button:hover {
-  background: #5ffcff;
-  color: #020617;
-  box-shadow: 0 0 12px #5ffcff;
-}
-
-/* RESPONSIVE */
+/* ================= MOBILE MODE ================= */
 @media (max-width: 768px) {
+
+  html, body {
+    overflow: auto;
+    height: auto;
+  }
+
+  .page {
+    position: relative;
+    min-height: 100dvh;
+    padding: 30px 0;
+  }
+
   .mission-layout {
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
   }
+
+  .polaroid-stack {
+    transform: scale(0.9);
+  }
+
   .mission-panel {
-    width: 90%;
+    width: 92%;
   }
+
 }

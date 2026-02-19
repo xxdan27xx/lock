@@ -41,5 +41,6 @@ function activatePhoto(el) {
 
 /* NEXT MISSION */
 function goToNext() {
-  window.location.href = "https://link-web-kamu.com";
+  window.location.href = "https://xxdan27xx.github.io/aniv/";
 }
+

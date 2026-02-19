@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Vault</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PAGE 1 : BRANKAS -->
+<div class="page active" id="brankas">
+  <div class="safe">
+    <div class="safe-title">SECURE VAULT</div>
+    <div class="safe-status">STATUS : LOCKED</div>
+
+    <div class="safe-display" id="display">○ ○ ○ ○</div>
+
+    <div class="safe-keypad">
+      <button onclick="inputPin(1)">1</button>
+      <button onclick="inputPin(2)">2</button>
+      <button onclick="inputPin(3)">3</button>
+      <button onclick="inputPin(4)">4</button>
+      <button onclick="inputPin(5)">5</button>
+      <button onclick="inputPin(6)">6</button>
+      <button onclick="inputPin(7)">7</button>
+      <button onclick="inputPin(8)">8</button>
+      <button onclick="inputPin(9)">9</button>
+      <button onclick="hapus()">DEL</button>
+      <button onclick="inputPin(0)">0</button>
+      <button class="ok" onclick="cekPin()">OK</button>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 2 : MISSION -->
+<div class="page" id="mission">
+  <div class="mission-layout">
+
+    <!-- FOTO -->
+    <div class="polaroid-stack">
+      <div class="polaroid-card active" onclick="activatePhoto(this)">
+        <img src="WhatsApp Image 2026-02-19 at 23.56.10.jpeg">
+      </div>
+      <div class="polaroid-card" onclick="activatePhoto(this)">
+        <img src="WhatsApp Image 2026-02-19 at 23.56.15.jpeg">
+      </div>
+      <div class="polaroid-card" onclick="activatePhoto(this)">
+        <img src="selfie-time-1762314632252.jpg.jpg">
+      </div>
+    </div>
+
+    <!-- PANEL TEKS -->
+    <div class="mission-panel">
+      <div class="badge-diagonal">AYANG ONLY</div>
+
+      <div class="mission-title">
+        MISSION : 1 YEAR TOGETHER
+      </div>
+
+      <div class="panel-body">
+        <p>> TARGET : MY FOREVER PARTNER</p>
+        <p>> STATUS : SUCCESSFULLY UNLOCKED</p>
+        <br>
+<p>
+  1 tahun yang lalu kita memulai cerita ini,
+  dan hari ini aku masih jatuh cinta
+  pada orang yang sama 🤍
+</p>
+
+<p>
+  Terima kasih untuk setiap sabar,
+  setiap pelukan,
+  dan setiap kata “gapapa”
+  di saat keadaan tidak mudah.
+</p>
+
+<p>
+  Kamu bukan cuma pasangan,
+  kamu adalah tempat pulang.
+</p>
+
+<p>
+  <strong>
+    Happy 1st Anniversary 🤍  
+    Let’s make our story longer,
+    stronger,
+    and forever.
+  </strong>
+</p>
+      </div>
+
+      <div class="panel-footer">
+        <span>ID : LV-0202</span>
+        <span>SECURITY : HEART-LOCK</span>
+      </div>
+
+      <!-- TOMBOL NEXT -->
+      <div class="next-btn">
+        <button onclick="goToNext()">NEXT MISSION ➜</button>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
